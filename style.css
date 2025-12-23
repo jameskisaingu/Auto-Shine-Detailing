@@ -73,18 +73,33 @@ body {
 }
 
 main {
-  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  max-width: 900px;    
+  margin: 40px auto;  
+  padding: 0 20px;     
 }
 
 main section {
+  width: 100%;         
   margin-bottom: 40px;
+  text-align: center;  
 }
 
 main h2 {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   color: #1e90ff;
 }
 
+main p, main ul {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.services-buttons {
+  justify-content: center;
+}
 .services-buttons {
   display: flex;
   flex-wrap: wrap;
@@ -115,16 +130,29 @@ main h2 {
   cursor: pointer;
   transition: background 0.3s;
 }
+#booking {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+#booking h2 {
+  margin-bottom: 25px;
+  color: #1e90ff;
+  text-align: center;
+}
 
 #booking form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
   max-width: 450px;
   margin-top: 15px;
 }
 
 #booking input {
+  width: 100%;
   padding: 12px 15px;
   font-size: 1rem;
   border: 2px solid #1e90ff;
@@ -139,10 +167,11 @@ main h2 {
 }
 
 #booking button {
+  width: 100%;
   background-color: #1e90ff;
   color: #fff;
   border: none;
-  padding: 15px 25px;
+  padding: 15px;
   font-size: 1.1rem;
   border-radius: 8px;
   cursor: pointer;
@@ -199,6 +228,7 @@ footer {
     max-width: 100%;
   }
 }
+
 
 
 
