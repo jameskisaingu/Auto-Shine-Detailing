@@ -1,34 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-         <meta charset="UTF-8">
-    <title>Auto Shine Detailing </title>
-    <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
- <script src="script.js"></script> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Shine Detailing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
   <header class="header">
-<div class="logo-row">
-<img src="logo.png" alt="Auto Shine Detailing Logo" class="logo">
-<div class="brand-text">
-<h1>Auto Shine Detailing</h1>
-<p>Premium Mobile Auto Detailing – Nairobi</p>
-</div>
-</div>
+    <div class="logo-name">
+      <img src="logo.png" alt="Auto Shine Logo" class="logo">
+      <h1>Auto Shine Detailing</h1>
+    </div>
 
-<nav class="nav-vertical">
-  <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#booking">Book</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+    <!-- Navigation -->
+    <nav class="nav-vertical">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#booking">Book</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-</header>
-<main>
-
-  <section class="slideshow">
+  <!-- Slideshow -->
+ <section class="slideshow">
     <img src="Car1.jpg" class="slide active">
     <img src="Car2.jpg" class="slide">
     <img src="Car3.jpg" class="slide">
@@ -42,119 +41,57 @@
     <img src="Car11.jpg" class="slide">
     <img src="Car12.jpg" class="slide">
   </section>
+  <!-- Main Content -->
+  <main>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>We provide premium mobile car detailing services across Nairobi. Your car will shine like new!</p>
+    </section>
 
-  <section class="about">
-    <h2>About Us</h2>
-    <p>
-      Auto Shine Detailing is a <strong>professional mobile car detailing service based in Nairobi</strong>. 
-      We come to your home or office and restore your vehicle’s shine using premium products and expert care.
+    <section id="services">
+      <h2>Our Services & Prices</h2>
+      <ul>
+        <li>Exterior Wash - KES 1500</li>
+        <li>Interior Detailing - KES 2000</li>
+        <li>Full Detail Package - KES 4000</li>
+      </ul>
+    </section>
 
-    </p>
-  </section>
+    <section id="booking">
+      <h2>Book a Service</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
 
-  <section>
-    <h2>Services & Prices</h2>
-    <div class="services">
-      <a href="#booking" class="service-link">
-      <div class="card">
-        <h3>Exterior Wash & Wax</h3>
-        <p>Thorough hand wash</p>
-        <p class="price">KES 500</p>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="car-type">Car Type:</label>
+        <input type="text" id="car-type" name="car-type" required>
+
+        <label for="date">Preferred Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <button type="submit" onclick="window.location.href='https://wa.me/0790899640';return false;">Book via WhatsApp</button>
+      </form>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>WhatsApp: 0790899640</p>
+      <div class="social-icons">
+        <a href="#"><img src="whatsapp.png" alt="WhatsApp"></a>
+        <a href="#"><img src="instagram.png" alt="Instagram"></a>
+        <a href="#"><img src="x.png" alt="X"></a>
       </div>
-      </a>
+    </section>
+  </main>
 
-      <a href="#booking" class="service-link">
-      <div class="card">
-        <h3>Interior Detailing</h3>
-        <p>Seats, carpets, dashboard & vacuum.</p>
-        <p class="price">KES 1,500</p>
-      </div>
-      </a>
-
-      <a href="#booking" class="service-link">
-      <div class="card">
-        <h3>Full Detail Package</h3>
-        <p>Complete interior & exterior detail.</p>
-        <p class="price">KES 2,000</p>
-      </div>
-      </a>
-
-      <a href="#booking" class="service-link">
-      <div class="card">
-        <h3>Engine Bay Cleaning</h3>
-        <p>Safe and professional degreasing.</p>
-        <p class="price">KES 1,500</p>
-      </div>
-      </a>
-    </div>
-  </section>
-
-  <section id="booking">
-    <h2>Book a Service</h2>
-    <form id="bookingForm" class="booking-form">
-      <input type="text" id="name" placeholder="Full Name" required>
-      <input type="tel" id="phone" placeholder="Phone Number" required>
-      <input type="text" id="car" placeholder="Car Type (e.g. Toyota Prado)" required>
-
-      <select id="service" required>
-        <option value="">Select Service</option>
-        <option>Exterior Wash & Wax</option>
-        <option>Interior Detailing</option>
-        <option>Full Detail Package</option>
-        <option>Engine Bay Cleaning</option>
-      </select>
-
-      <input type="date" id="date" required>
-
-      <textarea id="location" placeholder="Your Location (e.g. Kilimani, Westlands)" required></textarea>
-
-      <button type="submit">Book via WhatsApp</button>
-    </form>
-  </section>
-</main>
-
+  <!-- Footer -->
   <footer>
-     <div class="footer-socials">
-    <a href="https://wa.me/254790899640" target="_blank">
-      <img src="Whatsapp.png" alt="WhatsApp">
-    </a>
-    <a href="https://instagram.com/autoshinedetailing" target="_blank">
-      <img src="Instagram.png" alt="Instagram">
-    </a>
-    <a href="https://x.com/autoshinedetail" target="_blank">
-      <img src="X.png" alt="X">
-    </a>
-     </div>
-    <p>&copy; 2025 Auto Shine Detailing | WhatsApp: 0790 899 640</p>
+    <p>© 2025 Auto Shine Detailing. All rights reserved.</p>
   </footer>
 
-  <script>
-    let slides = document.querySelectorAll('.slide');
-    let index = 0;
-
-    setInterval(() => {
-      slides[index].classList.remove('active');
-      index = (index + 1) % slides.length;
-      slides[index].classList.add('active');
-    }, 4000);
-
-    document.getElementById('bookingForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-
-      const name = document.getElementById('name').value;
-      const phone = document.getElementById('phone').value;
-      const service = document.getElementById('service').value;
-      const date = document.getElementById('date').value;
-      const location = document.getElementById('location').value;
-
-      const message = `Hello Auto Shine Detailing,%0A%0AName: ${name}%0APhone: ${phone}%0AService: ${service}%0ADate: ${date}%0ALocation: ${location}`;
-
-      window.open(`https://wa.me/254790899640?text=${message}`, '_blank');
-    });
-  </script>
-
+  <script src="script.js"></script>
 </body>
-  
 </html>
-
-
