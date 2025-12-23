@@ -123,8 +123,6 @@ main p, main ul {
   transform: translateY(-3px); 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-
-
   color: #fff;
   border: none;
   cursor: pointer;
@@ -134,7 +132,14 @@ main p, main ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 20px;
+  justify-content: center; 
+  text-align: center;      
+  padding: 60px 20px;
+  background-color: #f0f8ff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  margin: 20px auto;
+  max-width: 500px;
 }
 
 #booking h2 {
@@ -147,8 +152,7 @@ main p, main ul {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  max-width: 450px;
-  margin-top: 15px;
+  width: 100%;
 }
 
 #booking input {
@@ -228,6 +232,7 @@ footer {
     max-width: 100%;
   }
 }
+
 
 
 
