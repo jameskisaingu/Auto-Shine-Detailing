@@ -1,18 +1,15 @@
-/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body */
 body {
   font-family: Arial, sans-serif;
   background-color: #f5f5f5;
   color: #333;
 }
 
-/* Header */
 .header {
   display: flex;
   justify-content: space-between;
@@ -54,11 +51,11 @@ body {
   color: #ffeb3b;
 }
 
-/* Slideshow - Full width and responsive */
+
 .slideshow {
   position: relative;
   width: 100%;
-  height: 60vh; /* 60% of viewport height */
+  height: 60vh;
   overflow: hidden;
 }
 
@@ -66,7 +63,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* ensures full image without stretching */
+  object-fit: cover; 
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
@@ -75,7 +72,6 @@ body {
   opacity: 1;
 }
 
-/* Main */
 main {
   padding: 40px 20px;
 }
@@ -109,7 +105,7 @@ main h2 {
 
 .services-buttons button:hover {
   background-color: #00bfff;
-  transform: translateY(-3px); /* slight lift effect */
+  transform: translateY(-3px); 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -120,7 +116,6 @@ main h2 {
   transition: background 0.3s;
 }
 
-/* Booking Form */
 #booking form {
   display: flex;
   flex-direction: column;
@@ -165,7 +160,6 @@ main h2 {
   }
 }
 
-/* Social Icons */
 .social-icons img {
   width: 40px;
   height: 40px;
@@ -177,7 +171,6 @@ main h2 {
   transform: scale(1.2);
 }
 
-/* Footer */
 footer {
   text-align: center;
   padding: 20px;
@@ -185,7 +178,6 @@ footer {
   color: #fff;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .nav-center ul {
     flex-direction: column;
@@ -200,13 +192,14 @@ footer {
   }
 
   .slideshow {
-    height: 40vh; /* smaller height on mobile */
+    height: 40vh;
   }
 
   form {
     max-width: 100%;
   }
 }
+
 
 
 
