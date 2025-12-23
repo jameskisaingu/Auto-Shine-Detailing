@@ -17,7 +17,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
+  padding: 20px;
   background: linear-gradient(to right, #1e90ff, #00bfff);
   color: #fff;
   flex-wrap: wrap;
@@ -29,21 +29,24 @@ body {
 }
 
 .logo-name img.logo {
-  width: 60px;
-  height: 60px;
+  width: 200px;
+  height: 200px;
   margin-right: 15px;
 }
 
 .nav-vertical ul {
   list-style: none;
   display: flex;
-  gap: 15px;
+  gap: 30px;
+  margin-top: 15px;
+  padding: 0;
 }
 
 .nav-vertical ul li a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
+  font-size: 1.2rem;
   transition: color 0.3s;
 }
 
@@ -133,8 +136,9 @@ footer {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .header {
+  .nav-center ul {
     flex-direction: column;
+    gap: 10px;
     align-items: center;
   }
 
@@ -152,3 +156,4 @@ footer {
     max-width: 100%;
   }
 }
+
