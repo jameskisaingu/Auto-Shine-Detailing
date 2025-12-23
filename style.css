@@ -142,7 +142,7 @@ main p, main ul {
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   margin: 20px auto;
-  max-width: 500px;
+  max-width: 400px;
 }
 
 #booking h2 {
@@ -160,7 +160,7 @@ main p, main ul {
 
 #booking input {
   width: 100%;
-  padding: 12px 15px;
+  padding: 10px 12px;
   font-size: 1rem;
   border: 2px solid #1e90ff;
   border-radius: 8px;
@@ -178,7 +178,7 @@ main p, main ul {
   background-color: #1e90ff;
   color: #fff;
   border: none;
-  padding: 15px;
+  padding: 12px;
   font-size: 1.1rem;
   border-radius: 8px;
   cursor: pointer;
@@ -190,9 +190,9 @@ main p, main ul {
   transform: translateY(-3px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   #booking form {
-    max-width: 100%;
+    max-width: 90%;
   }
 }
 
@@ -235,10 +235,3 @@ footer {
     max-width: 100%;
   }
 }
-
-
-
-
-
-
-
