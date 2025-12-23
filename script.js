@@ -1,4 +1,3 @@
-
 let slides = document.querySelectorAll('.slide');
 let current = 0;
 
@@ -14,4 +13,4 @@ function nextSlide() {
   showSlide(current);
 }
 showSlide(current);
-setInterval(nextSlide, 3000); // Change slide every 3 seconds
+setInterval(nextSlide, 3000);
