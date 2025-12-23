@@ -89,6 +89,30 @@ main h2 {
   color: #1e90ff;
 }
 
+.services-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.services-buttons button {
+  background-color: #1e90ff;
+  color: #fff;
+  border: none;
+  padding: 15px 25px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.services-buttons button:hover {
+  background-color: #00bfff;
+  transform: translateY(-3px); /* slight lift effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
 /* Form */
 form {
   display: flex;
@@ -156,4 +180,5 @@ footer {
     max-width: 100%;
   }
 }
+
 
