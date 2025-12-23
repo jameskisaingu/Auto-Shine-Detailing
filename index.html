@@ -8,14 +8,13 @@
 </head>
 <body>
 
-  <!-- Header -->
   <header class="header">
     <div class="logo-name">
       <img src="logo.png" alt="Auto Shine Logo" class="logo">
       <h1>Auto Shine Detailing</h1>
     </div>
 
-    <!-- Navigation -->
+  
     <nav class="nav-center">
       <ul>
         <li><a href="#about">About</a></li>
@@ -26,7 +25,6 @@
     </nav>
   </header>
 
-  <!-- Slideshow -->
  <section class="slideshow">
     <img src="Car1.jpg" class="slide active">
     <img src="car2.jpg" class="slide">
@@ -41,7 +39,7 @@
     <img src="Car11.jpg" class="slide">
     <img src="Car12.jpg" class="slide">
   </section>
-  <!-- Main Content -->
+  
   <main>
     <section id="about">
       <h2>About Us</h2>
@@ -59,23 +57,17 @@
     </section>
 
     <section id="booking">
-      <h2>Book a Service</h2>
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="phone">Phone:</label>
-        <input type="tel" id="phone" name="phone" required>
-
-        <label for="car-type">Car Type:</label>
-        <input type="text" id="car-type" name="car-type" required>
-
-        <label for="date">Preferred Date:</label>
-        <input type="date" id="date" name="date" required>
-
-        <button type="submit" onclick="window.location.href='https://wa.me/0790899640';return false;">Book via WhatsApp</button>
-      </form>
-    </section>
+  <h2>Book a Service</h2>
+  <form>
+    <input type="text" id="name" name="name" placeholder="Your Name" required>
+    <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+    <input type="text" id="car-type" name="car-type" placeholder="Car Type" required>
+    <input type="date" id="date" name="date" required>
+    <button type="submit" onclick="window.location.href='https://wa.me/0790899640';return false;">
+      Book via WhatsApp
+    </button>
+  </form>
+</section>
 
     <section id="contact">
       <h2>Contact Us</h2>
@@ -87,8 +79,7 @@
       </div>
     </section>
   </main>
-
-  <!-- Footer -->
+  
   <footer>
     <p>© 2025 Auto Shine Detailing. All rights reserved.</p>
   </footer>
@@ -96,6 +87,7 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
