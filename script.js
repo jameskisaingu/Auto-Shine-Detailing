@@ -10,7 +10,5 @@ function nextSlide() {
   current = (current + 1) % slides.length;
   showSlide(current);
 }
-
-// Initialize
 showSlide(current);
 setInterval(nextSlide, 3000);
